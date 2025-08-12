@@ -72,3 +72,15 @@ The app will compute:
 - Full table up to maturity (showing any **balloon due** on the last row)
 - Summary metrics and a balance-over-time chart
 - A CSV download of the table
+
+
+## Interest Rate Interpolator (PCHIP)
+
+This repo includes a PCHIP-based interest rate interpolator that takes sparse (period, rate) points and fills the curve without overshoot.
+
+- Core module: `rate_interpolator.py`
+- Streamlit page: `pages/02_Rate_Interpolator.py`
+
+Run the multi-page app:
+    streamlit run streamlit_app.py
+Then open "Interest Rate Interpolator (PCHIP)" from the sidebar.
